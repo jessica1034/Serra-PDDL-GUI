@@ -7,7 +7,7 @@ carote - pianta
 irrigatore-lattuga - irrigatore
 irrigatore-pomodori - irrigatore
 irrigatore-carote - irrigatore
-serbatoio1-serbatoio
+
 )
 
 (:init
