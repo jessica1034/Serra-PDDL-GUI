@@ -6,8 +6,6 @@
 (:types 
     pianta
     irrigatore
-    livello-serbatoio
-    umidita
     
 
 )
