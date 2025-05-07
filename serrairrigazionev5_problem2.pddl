@@ -5,7 +5,6 @@ pomodori - pianta
 
 irrigatore-lattuga - irrigatore
 irrigatore-pomodori - irrigatore
-serbatoio1-serbatoio
 )
 
 (:init
