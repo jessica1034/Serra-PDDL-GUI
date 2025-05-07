@@ -32,7 +32,6 @@
 
     (degrado-completato ?p - pianta)
 
-    (manutenzione-giorno)
 )
 
 
