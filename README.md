@@ -1,17 +1,13 @@
-Scaricare tutto il contenuto della repository in unica cartella.
-Nella medesima cartella deve essere contenuto il planner NOMEPLANNER.
-...come scaricre e java
-
-
-Per poter utilizzare la gui è necessario avere Python sulla propria macchina. ......PASSAGGI DI VERIFI
+Per poter utilizzare la gui è necessario avere Python sulla propria macchina. 
 Inoltre serve che si installi la libreria pygame tramite il comando: python -m pip install pygame
 
 
-Accedere alla cartella da prompt dei comandi.
-Digitare "pythin NOMEGUI.py " per attivare la gui
-Sarà necessario inserire il nome del file problem e la modalità di enshp.jar : l'inserimento di tali istruzioni viene guidato dal prompt dei comandi in caso di errori di digitazione.
+STEP:
+1- Scaricare tutto il contenuto della repository in unica cartella.
+2- Nella medesima cartella deve essere contenuto il planner enhsp.jar, che richiede di avere Java sulla macchina. 
+3- Aprire la cartella da prompt dei comandi e in seguito digitare 'NOMEGUI.py'
+4- Verrà chiesto di inserire il nome del problemfile (con .pddl) e il nome della modalità di ENSHP ('opt-hrmax' o 'sat-hadd') da prompt dei comandi
+5- Segue l'apertura della gui con l'esecuzione del problem selezionato.
 
-La gui preleva il problem che è stato scelto. 
-Come prima finestra si visualizza il tasto "Avvia simulazione": solo dopo la sua digitura il planner genera il piano.
-Con il terzo problema ("NOME") potrebbero esserci dei rallentamenti in questa fase, sarà necessario attendere qualche istante.
+Con il terzo problema (serrairrigazionev5_problem3) potrebbero esserci dei rallentamenti nel caricamento della gui, sarà necessario attendere qualche istante.
 
