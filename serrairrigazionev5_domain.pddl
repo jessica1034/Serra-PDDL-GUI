@@ -6,9 +6,6 @@
 (:types 
     pianta
     irrigatore
-
-    
-
 )
 
 (:predicates 
@@ -45,11 +42,12 @@
 
 )
 
-;;collega irrigatore pianta: associa 1 irrigatore a 1 pianta 
 
 (:action irrigazione
     :parameters (?p - pianta ?i - irrigatore) ;; solo quando è umidità bassa
-    :precondition (and  (collega-irrigatore-pianta ?p ?i) (umidita-basso ?p) (in-uso ?i) (<(utilizzi-irrigatore ?i)1) (>(livello-serbatoio)(quantita-acqua-pianta ?p)) (mattina-momento) (not (pomeriggio-momento)) (not (sera-momento)))  ;;è mattina
+    :precondition (and  (collega-irrigatore-pianta ?p ?i) (umidita-basso ?p) (in-uso ?i) 
+    (<(utilizzi-irrigatore ?i)1) (>(livello-serbatoio)(quantita-acqua-pianta ?p)) (mattina-momento) 
+    (not (pomeriggio-momento)) (not (sera-momento)))  
     :effect (and (umidita-alto ?p) (not (umidita-basso ?p)) (not (umidita-medio ?p)) 
     (decrease (livello-serbatoio) (quantita-acqua-pianta ?p))
     (increase (utilizzi-irrigatore ?i) 1)
@@ -139,7 +137,6 @@
 )
 
 
-;; dire che o una o l'altra
 (:action umidita-media
     :parameters (?p - pianta)
     :precondition (and (not(degrado-completato ?p)) (sera-momento) (not (mattina-momento)) (not (pomeriggio-momento)) (umidita-alto ?p) (not (umidita-medio ?p)) (not (umidita-basso ?p)))
