@@ -8,7 +8,7 @@ REQUISITI:
 STEP DA SEGUIRE PER LA VISUALIZZAZIONE DELLA GUI: 
 1. Scaricare tutto il contenuto della repository in unica cartella.
 2. Nella medesima cartella deve essere contenuto il planner enhsp.jar
-3. Aprire la cartella da prompt dei comandi e in seguito digitare 'NOMEGUI.py'
+3. Aprire la cartella da prompt dei comandi e in seguito digitare 'Serragui.py'
 4. Verrà chiesto di inserire il nome del problemfile (con .pddl) e il nome della modalità di ENSHP ('opt-hrmax' o 'sat-hadd') da prompt dei comandi
 5. Segue l'apertura della gui con l'esecuzione del problem selezionato.
 
