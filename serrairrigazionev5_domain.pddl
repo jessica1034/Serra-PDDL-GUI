@@ -1,4 +1,3 @@
-;;ricarica a manutenzione esguite solo 1 volta
 (define (domain serrairrigazionev5)
 
 (:requirements :strips :fluents :durative-actions :timed-initial-literals :typing :conditional-effects :negative-preconditions :duration-inequalities :equality :disjunctive-preconditions)
@@ -139,13 +138,15 @@
 
 (:action umidita-media
     :parameters (?p - pianta)
-    :precondition (and (not(degrado-completato ?p)) (sera-momento) (not (mattina-momento)) (not (pomeriggio-momento)) (umidita-alto ?p) (not (umidita-medio ?p)) (not (umidita-basso ?p)))
+    :precondition (and (not(degrado-completato ?p)) (sera-momento) (not (mattina-momento)) (not (pomeriggio-momento)) 
+    (umidita-alto ?p) (not (umidita-medio ?p)) (not (umidita-basso ?p)))
     :effect (and (umidita-medio ?p) (not(umidita-alto ?p))(not (umidita-basso ?p))(degrado-completato ?p)
     (increase (effettuato-degrado-giorno ?p) 1))
 )
 (:action umidita-bassa
     :parameters    (?p - pianta)
-    :precondition (and (not(degrado-completato ?p)) (sera-momento) (not (mattina-momento)) (not (pomeriggio-momento)) (umidita-medio ?p) (not (umidita-alto ?p)) (not (umidita-basso ?p)))
+    :precondition (and (not(degrado-completato ?p)) (sera-momento) (not (mattina-momento)) (not (pomeriggio-momento)) 
+    (umidita-medio ?p) (not (umidita-alto ?p)) (not (umidita-basso ?p)))
     :effect (and (umidita-basso ?p) (not(umidita-alto ?p))(not (umidita-medio ?p))(degrado-completato ?p)
     (increase (effettuato-degrado-giorno ?p) 1))
 )
