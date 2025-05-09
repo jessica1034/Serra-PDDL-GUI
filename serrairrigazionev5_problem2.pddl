@@ -1,4 +1,4 @@
-(define (problem istanza1) (:domain serrairrigazionev5)
+(define (problem istanza2) (:domain serrairrigazionev5)
 (:objects 
 lattuga - pianta 
 pomodori - pianta
