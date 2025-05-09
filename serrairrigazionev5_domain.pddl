@@ -15,7 +15,6 @@
 (umidita-basso ?p - pianta)
 (umidita-medio ?p - pianta)
 (umidita-alto ?p - pianta)
-(manutenzione-richesta ?i - irrigatore)
 (in-uso ?i - irrigatore)
 (manutenzione-terminata ?i - irrigatore)
 (collega-irrigatore-pianta ?p-pianta ?i - irrigatore)
